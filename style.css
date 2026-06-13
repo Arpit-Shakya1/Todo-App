@@ -6,7 +6,7 @@
 
 html, body{
     height: 100%;
-    height: 100%;
+    width: 100%;
 }
 html{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -77,6 +77,12 @@ section .task-colum{
     display: flex;
     flex-direction: column;
     gap: var(--padding-m);
+    transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1) ;
+}
+section .task-colum.hover-over{
+    border: 2px dashed white;
+    transform: scale(1.03);
+
 }
 
 section .task-colum .heading{
